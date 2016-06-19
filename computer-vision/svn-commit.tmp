@@ -1,0 +1,20 @@
+
+--This line, and those below, will be ignored--
+
+M    Debug/CMakeFiles/CMakeOutput.log
+M    Debug/CMakeFiles/Makefile2
+M    Debug/CMakeFiles/code8-5.dir/CXX.includecache
+M    Debug/CMakeFiles/code8-5.dir/DependInfo.cmake
+M    Debug/CMakeFiles/code8-5.dir/build.make
+M    Debug/CMakeFiles/code8-5.dir/cmake_clean.cmake
+M    Debug/CMakeFiles/code8-5.dir/depend.internal
+M    Debug/CMakeFiles/code8-5.dir/depend.make
+M    Debug/CMakeFiles/code8-5.dir/link.txt
+M    Debug/CMakeFiles/code8-5.dir/progress.make
+M    Debug/CMakeFiles/progress.marks
+M    Debug/Makefile
+M    Debug/code8-5
+M    src/CMakeLists.txt
+M    src/include/shape_feature_extractor.h
+M    src/main.cpp
+M    src/shape_feature_extractor.cpp

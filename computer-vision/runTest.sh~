@@ -1,0 +1,7 @@
+clear&clear&clear
+rm -r Debug
+mkdir Debug
+cd Debug
+cmake -G "Unix Makefiles" ../test
+make
+./code8-5

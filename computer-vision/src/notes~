@@ -1,0 +1,18 @@
+// the big black block specifics
+if (sideRatio < 2 and areaRatio < .8 and areaRatio > .5 and area > 12 * mainThrees[0][0].area() 
+    and area < 20 * mainThrees[0][0].area())
+
+red rectagle:
+if ( histAnalysis > .3
+                and area_ratio > 1.2 and area_ratio < 2
+                and sideRatio < 1.6 and sideRatio > 1.3 
+                and angle1 > 10 and angle1 < 27
+                and angle2 > 10 and angle2 < 27
+                and rectangularity > .6
+
+
+******************************************************************************************************************************
+pickSystem:
+******************************************************************************************************************************
+for connecting to the server at auburn:
+	connection(user="mza0043", password="PickSystem", host="acadmysql.duc.auburn.edu", database="pickSystem")

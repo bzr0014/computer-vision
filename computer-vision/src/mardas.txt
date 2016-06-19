@@ -1,0 +1,30 @@
+/home/behnam/workspace_Helios/MachineLearning/src/imageCropping.cpp:23:67: error: ISO C++ forbids declaration of ‘mouse_callback’ with no type [-fpermissive]
+ ImageCropping::mouse_callback(int event, int x, int y, int, void *)
+                                                                   ^
+/home/behnam/workspace_Helios/MachineLearning/src/imageCropping.cpp:23:1: error: prototype for ‘int ImageCropping::mouse_callback(int, int, int, int, void*)’ does not match any in class ‘ImageCropping’
+ ImageCropping::mouse_callback(int event, int x, int y, int, void *)
+ ^
+In file included from /home/behnam/workspace_Helios/MachineLearning/src/imageCropping.cpp:7:0:
+/home/behnam/workspace_Helios/MachineLearning/src/imageCropping.h:21:14: error: candidate is: static void ImageCropping::mouse_callback(int, int, int, int, void*)
+  static void mouse_callback(int event, int x, int y, int, void *);
+              ^
+/home/behnam/workspace_Helios/MachineLearning/src/imageCropping.cpp: In function ‘int main()’:
+/home/behnam/workspace_Helios/MachineLearning/src/imageCropping.cpp:95:19: error: no matching function for call to ‘ImageCropping::ImageCropping()’
+  ImageCropping(img);
+                   ^
+/home/behnam/workspace_Helios/MachineLearning/src/imageCropping.cpp:95:19: note: candidates are:
+/home/behnam/workspace_Helios/MachineLearning/src/imageCropping.cpp:81:1: note: ImageCropping::ImageCropping(cv::Mat)
+ ImageCropping::ImageCropping(Mat img)
+ ^
+/home/behnam/workspace_Helios/MachineLearning/src/imageCropping.cpp:81:1: note:   candidate expects 1 argument, 0 provided
+In file included from /home/behnam/workspace_Helios/MachineLearning/src/imageCropping.cpp:7:0:
+/home/behnam/workspace_Helios/MachineLearning/src/imageCropping.h:8:7: note: ImageCropping::ImageCropping(const ImageCropping&)
+ class ImageCropping {
+       ^
+/home/behnam/workspace_Helios/MachineLearning/src/imageCropping.h:8:7: note:   candidate expects 1 argument, 0 provided
+/home/behnam/workspace_Helios/MachineLearning/src/imageCropping.h:8:7: note: ImageCropping::ImageCropping(ImageCropping&&)
+/home/behnam/workspace_Helios/MachineLearning/src/imageCropping.h:8:7: note:   candidate expects 1 argument, 0 provided
+make[2]: *** [CMakeFiles/code8-5.dir/imageCropping.cpp.o] Error 1
+make[1]: *** [CMakeFiles/code8-5.dir/all] Error 2
+make: *** [all] Error 2
+

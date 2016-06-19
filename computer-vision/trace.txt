@@ -1,0 +1,53 @@
+In file included from /usr/local/include/opencv2/opencv.hpp:56:0,
+                 from /home/behnam/workspace_Helios/MachineLearning/src/main.cpp:4:
+/usr/include/c++/4.8/bits/stl_pair.h: In instantiation of ‘std::pair<_T1, _T2>::pair(const _T1&, const _T2&) [with _T1 = const std::basic_string<char>; _T2 = CvSVM]’:
+/usr/include/c++/4.8/bits/stl_map.h:469:59:   required from ‘std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = std::basic_string<char>; _Tp = CvSVM; _Compare = std::less<std::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::basic_string<char>, CvSVM> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = CvSVM; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = std::basic_string<char>]’
+/home/behnam/workspace_Helios/MachineLearning/src/main.cpp:175:22:   required from here
+/usr/local/include/opencv2/ml/ml.hpp:553:5: error: ‘CvSVM::CvSVM(const CvSVM&)’ is private
+     CvSVM(const CvSVM&);
+     ^
+In file included from /usr/include/c++/4.8/utility:70:0,
+                 from /usr/include/c++/4.8/algorithm:60,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from /usr/local/include/opencv2/opencv.hpp:47,
+                 from /home/behnam/workspace_Helios/MachineLearning/src/main.cpp:4:
+/usr/include/c++/4.8/bits/stl_pair.h:113:31: error: within this context
+       : first(__a), second(__b) { }
+                               ^
+In file included from /usr/local/include/opencv2/opencv.hpp:56:0,
+                 from /home/behnam/workspace_Helios/MachineLearning/src/main.cpp:4:
+/usr/include/c++/4.8/bits/stl_pair.h: In instantiation of ‘void __gnu_cxx::new_allocator<_Tp>::construct(__gnu_cxx::new_allocator<_Tp>::pointer, const _Tp&) [with _Tp = std::pair<const std::basic_string<char>, CvSVM>; __gnu_cxx::new_allocator<_Tp>::pointer = std::pair<const std::basic_string<char>, CvSVM>*]’:
+/usr/include/c++/4.8/bits/stl_tree.h:382:6:   required from ‘std::_Rb_tree_node<_Val>* std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_create_node(const value_type&) [with _Key = std::basic_string<char>; _Val = std::pair<const std::basic_string<char>, CvSVM>; _KeyOfValue = std::_Select1st<std::pair<const std::basic_string<char>, CvSVM> >; _Compare = std::less<std::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::basic_string<char>, CvSVM> >; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_Link_type = std::_Rb_tree_node<std::pair<const std::basic_string<char>, CvSVM> >*; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::value_type = std::pair<const std::basic_string<char>, CvSVM>]’
+/usr/include/c++/4.8/bits/stl_tree.h:1023:66:   required from ‘std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_insert_(std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_Base_ptr, std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_Base_ptr, const _Val&) [with _Key = std::basic_string<char>; _Val = std::pair<const std::basic_string<char>, CvSVM>; _KeyOfValue = std::_Select1st<std::pair<const std::basic_string<char>, CvSVM> >; _Compare = std::less<std::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::basic_string<char>, CvSVM> >; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator = std::_Rb_tree_iterator<std::pair<const std::basic_string<char>, CvSVM> >; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_Base_ptr = std::_Rb_tree_node_base*]’
+/usr/include/c++/4.8/bits/stl_tree.h:1482:33:   required from ‘std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_insert_unique_(std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator, const _Val&) [with _Key = std::basic_string<char>; _Val = std::pair<const std::basic_string<char>, CvSVM>; _KeyOfValue = std::_Select1st<std::pair<const std::basic_string<char>, CvSVM> >; _Compare = std::less<std::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::basic_string<char>, CvSVM> >; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator = std::_Rb_tree_iterator<std::pair<const std::basic_string<char>, CvSVM> >; std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::const_iterator = std::_Rb_tree_const_iterator<std::pair<const std::basic_string<char>, CvSVM> >]’
+/usr/include/c++/4.8/bits/stl_map.h:648:54:   required from ‘std::map<_Key, _Tp, _Compare, _Alloc>::iterator std::map<_Key, _Tp, _Compare, _Alloc>::insert(std::map<_Key, _Tp, _Compare, _Alloc>::iterator, const value_type&) [with _Key = std::basic_string<char>; _Tp = CvSVM; _Compare = std::less<std::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::basic_string<char>, CvSVM> >; std::map<_Key, _Tp, _Compare, _Alloc>::iterator = std::_Rb_tree_iterator<std::pair<const std::basic_string<char>, CvSVM> >; std::map<_Key, _Tp, _Compare, _Alloc>::value_type = std::pair<const std::basic_string<char>, CvSVM>]’
+/usr/include/c++/4.8/bits/stl_map.h:469:59:   required from ‘std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = std::basic_string<char>; _Tp = CvSVM; _Compare = std::less<std::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::basic_string<char>, CvSVM> >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = CvSVM; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = std::basic_string<char>]’
+/home/behnam/workspace_Helios/MachineLearning/src/main.cpp:175:22:   required from here
+/usr/local/include/opencv2/ml/ml.hpp:553:5: error: ‘CvSVM::CvSVM(const CvSVM&)’ is private
+     CvSVM(const CvSVM&);
+     ^
+In file included from /usr/include/c++/4.8/utility:70:0,
+                 from /usr/include/c++/4.8/algorithm:60,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from /usr/local/include/opencv2/opencv.hpp:47,
+                 from /home/behnam/workspace_Helios/MachineLearning/src/main.cpp:4:
+/usr/include/c++/4.8/bits/stl_pair.h:96:12: error: within this context
+     struct pair
+            ^
+In file included from /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++allocator.h:33:0,
+                 from /usr/include/c++/4.8/bits/allocator.h:46,
+                 from /usr/include/c++/4.8/ext/alloc_traits.h:38,
+                 from /usr/include/c++/4.8/bits/stl_construct.h:61,
+                 from /usr/include/c++/4.8/bits/stl_tempbuf.h:60,
+                 from /usr/include/c++/4.8/bits/stl_algo.h:62,
+                 from /usr/include/c++/4.8/algorithm:62,
+                 from /usr/local/include/opencv2/core/core.hpp:56,
+                 from /usr/local/include/opencv2/opencv.hpp:47,
+                 from /home/behnam/workspace_Helios/MachineLearning/src/main.cpp:4:
+/usr/include/c++/4.8/ext/new_allocator.h:130:9: note: synthesized method ‘std::pair<const std::basic_string<char>, CvSVM>::pair(const std::pair<const std::basic_string<char>, CvSVM>&)’ first required here 
+       { ::new((void *)__p) _Tp(__val); }
+         ^
+make[2]: *** [CMakeFiles/code8-5.dir/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/code8-5.dir/all] Error 2
+make: *** [all] Error 2
+
